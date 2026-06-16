@@ -4,7 +4,7 @@
 
 内置 **74 个从真实网站提取的完整设计系统**（DESIGN.md），每个都包含真实的颜色 / 字体 / 间距 / 圆角 / 组件 token 与 Do's & Don'ts 规则。你不用凭空「设计」——先匹配一个真实品牌风格，再严格按它的规范生成。
 
-> 一个 Claude Code Skill（[Agent Skill](https://docs.claude.com/en/docs/agents-and-tools/agent-skills)）。
+> 基于 [Agent Skill](https://docs.claude.com/en/docs/agents-and-tools/agent-skills) 规范（`SKILL.md` 入口 + `references/` 资源）构建，可被任意支持该规范的主流 agent 加载使用，不绑定特定平台。
 
 ## 为什么这样设计
 
@@ -53,7 +53,7 @@ design-to-html/
 
 ## 安装与使用
 
-把本目录放进 Claude Code 的 skills 路径下（例如 `~/.claude/skills/design-to-html/`），重启会话后即可自动识别。然后在 Claude Code 里直接描述需求，例如：
+本 skill 遵循 Agent Skill 规范，任何支持该规范的主流 agent（Claude Code、Cursor、Codex 等）均可加载。把本目录放入对应工具的 skills 目录后重启会话即可识别，然后直接用自然语言描述需求，例如：
 
 - 「把这份周报做成一个 HTML 页面，要 Linear 那种感觉」
 - 「帮我做一个产品落地页」
